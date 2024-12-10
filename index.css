@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.noise_bg {
+    /* white to black linear noise gradient spanning from top to bottom */
+    background:
+    url('noise_square-min.png'),
+    linear-gradient(#0D1429, #fff);
+}
