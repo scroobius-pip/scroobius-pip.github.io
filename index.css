@@ -6,5 +6,11 @@
     /* white to black linear noise gradient spanning from top to bottom */
     background:
     url('noise_square-min.png'),
-    linear-gradient(#0D1429, #fff);
+    linear-gradient(#0D1429, 70%, #fff);
+}
+
+.noise_bg_2 {
+    background:
+    url('noise_square-min.png'),
+    #1D1E21
 }
