@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="/public/index.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,43 +13,49 @@
         rel="stylesheet">
 </head>
 
-<body class="h-screen flex flex-col">
-    <section class="noise_bg  relative h-full flex  items-center justify-center   ">
-        <div class="relative z-10 font-serif md:pl-12 pt-12 pb-12 text-center text-white space-y-16 mb-96">
-            <div class=" text-7xl leading-[150%] ">
-                <h1 class="capitalize  tracking-tight"> <video muted autoplay loop playsinline
-                        class=" h-24 inline align-top">
+<body class=" flex flex-col noise_bg">
+    <section class="  relative h-screen flex  items-center justify-center justify-start   ">
+        <div class="relative z-10 font-serif md:pl-12 pt-12 pb-12 text-center text-white space-y-16">
+            <div class="leading-[150%] ">
+                <h1 class="capitalize text-3xl md:text-7xl  tracking-tight align-bottom"> <video muted autoplay loop
+                        playsinline class=" h-[1.5em] inline align-text-top">
                         <source src="/public/blender_crown_coin0001-0189.webm" type="video/webm">
-                    </video> To Win
+                    </video> To Win, You want a jack of all trades
                 </h1>
-                <h1 class=" capitalize  tracking-tight _max-w-xl">You want a jack of all trades
-                </h1>
-                <p class="font-sans text-xl max-w-md m-auto pt-8 tracking-tight  ">Technical co-founder as a service for
+                <!-- <h1 class="inline-block capitalize  tracking-tight text-3xl md:text-7xl">You want a jack of all trades
+                </h1> -->
+                <p class="font-sans text-lg max-w-xs md:max-w-md m-auto pt-8 tracking-tight  ">Technical co-founder as a
+                    service for
                     <b class="lowercase">$4999/mo</b>
                     cancel
                     anytime.
                 </p>
             </div>
 
-            <button class="py-4 px-8 rounded-full shadow-md s-full font-sans bg-white text-[#1D1E21] font-bold ">
-                Get Started
-            </button>
+            <div class="space-y-2 font-sans tracking-tight">
+                <button class="py-4 px-8 -rounded-full text-lg  bg-white text-[#1D1E21] font-bold ">
+                    Schedule a Call
+
+                </button>
+
+            </div>
         </div>
-        <!-- <img class="absolute -bottom-1/4  right-0 " src="/public/v1_window_3 1.png" /> -->
-        <img class="absolute -bottom-[calc(75%)] " src="/public/v1_window_a 3.png" />
+        <img class="absolute bottom-0  _md:-bottom-1/4 right-0 " src="/public/v1_window_3 1.png" />
+        <div class="absolute inset-0 bg-black bg-opacity-25 md:bg-opacity-0"></div>
     </section>
-    <section class="z-10 noise_bg_2 text-white p-12 space-y-8">
-        <div class="flex flex-col md:flex-row gap-8 justify-between  max-w-screen-2xl">
+    <section class="z-10 noise_bg_2 h-screen text-white p-2 md:p-8  space-y-8 flex flex-col justify-between">
+        <div class="flex flex-col lg:flex-row gap-8 justify-between  max-w-screen-2xl">
             <div class="space-y-8 ">
-                <div class="flex flex-row gap-4">
+                <div class="flex flex-col md:flex-row gap-4  ">
 
                     <div class="flex flex-col justify-between">
                         <div class="bg-white h-24 w-24"></div>
-                        <a href="#" class="bg-bslack">
+                        <a href="#" class="bg-bslack md:block hidden">
                             Blog
                         </a>
                     </div>
-                    <div class="grid grid-rows-2 grid-flow-col gap-4 font-serif text-lg leading-snug tracking-wide">
+                    <div style="grid-template-rows:repeat(2, minmax(0,max-content));"
+                        class="grid _grid-rows-2 grid-flow-row md:grid-flow-col gap-y-2 gap-x-4 font-serif text-lg leading-snug tracking-wide">
 
                         <p>
                             Hi <b>188.184.79.135</b>, <br /><br />
@@ -83,76 +90,60 @@
 
                 </div>
                 <div class="flex items-center">
-                    <div class="h-2 w-full bg-white rounded-l-full"></div>
-                    <button class="py-4 px-8 rounded-full shrink-0 font-sans bg-white text-[#1D1E21] font-bold ">
+                    <div class="h-1 w-full bg-white _rounded-l-full"></div>
+                    <button
+                        class="py-4 px-8 _rounded-full shrink-0 font-sans bg-white text-sm  text-[#1D1E21] font-bold ">
                         Schedule a Call
                     </button>
                 </div>
             </div>
-            <img src="/public/qr.png" class="aspect-square w-full h-full object-cover" />
+            <img src="/public/qr.png" class="aspect-square h-full object-cover m-auto " />
         </div>
 
 
         <div>
-            <div class="flex flex-row gap-2 flex-wrap">
-                <h2 class="flex-1">
+            <div class="flex flex-row gap-x-2 gap-y-4 flex-wrap "">
+                <h2 class=" flex-1 grow p-2 bg-white text-black h-auto font-serif text-2xl ">
                     Porfolio
                 </h2>
 
-                <a class="flex-1" href="#">
+                <a class=" flex-1 " href=" #">
+                <b>Arible.co</b>
+                <p>
+                    A growing collection of tools accessible under one platform
+                </p>
+                </a>
+                <a class="flex-1 " href="#">
                     <b>Arible.co</b>
-                    <p class="max-w-xs">
+                    <p>
                         A growing collection of tools accessible under one platform
                     </p>
                 </a>
-                <a class="flex-1" href="#">
+                <a class="flex-1 " href="#">
                     <b>Arible.co</b>
-                    <p class="max-w-xs">
+                    <p>
                         A growing collection of tools accessible under one platform
                     </p>
                 </a>
-                <a class="flex-1" href="#">
+                <a class="flex-1 " href="#">
                     <b>Arible.co</b>
-                    <p class="max-w-xs">
+                    <p>
                         A growing collection of tools accessible under one platform
                     </p>
                 </a>
-                <a class="flex-1" href="#">
+                <a class="flex-1 " href="#">
                     <b>Arible.co</b>
-                    <p class="max-w-xs">
+                    <p>
                         A growing collection of tools accessible under one platform
                     </p>
                 </a>
-                <a class="flex-1" href="#">
+                <a class="flex-1 " href="#">
                     <b>Arible.co</b>
-                    <p class="max-w-xs">
+                    <p>
                         A growing collection of tools accessible under one platform
                     </p>
                 </a>
-                <a class="flex-1" href="#">
-                    <b>Arible.co</b>
-                    <p class="max-w-xs">
-                        A growing collection of tools accessible under one platform
-                    </p>
-                </a>
-                <a class="flex-1" href="#">
-                    <b>Arible.co</b>
-                    <p class="max-w-xs">
-                        A growing collection of tools accessible under one platform
-                    </p>
-                </a>
-                <a class="flex-1" href="#">
-                    <b>Arible.co</b>
-                    <p class="max-w-xs">
-                        A growing collection of tools accessible under one platform
-                    </p>
-                </a>
-                <a class="flex-1" href="#">
-                    <b>Arible.co</b>
-                    <p class="max-w-xs">
-                        A growing collection of tools accessible under one platform
-                    </p>
-                </a>
+
 
             </div>
         </div>
