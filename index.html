@@ -1,102 +1,128 @@
 <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link href="/public/index.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
+        <link href="/public/index.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- <link
             href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&family=Space+Mono:wght@400;700&display=swap"
             rel="stylesheet"
         /> -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&family=Sacramento&family=Space+Mono:wght@400;700&display=swap"
-        rel="stylesheet" />
-    <script>
-        fetch('https://api.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('ip').innerHTML = document.getElementById('ip').innerHTML.replace('{{ip-address}}', data.ip);
-            })
-            .catch(error => console.error('Error fetching IP:', error));
-    </script>
-</head>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&family=Sacramento&family=Space+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <script>
+            fetch("https://api.ipify.org?format=json")
+                .then((response) => response.json())
+                .then((data) => {
+                    document.getElementById("ip").innerHTML = document
+                        .getElementById("ip")
+                        .innerHTML.replace("{{ip-address}}", data.ip);
+                })
+                .catch((error) => console.error("Error fetching IP:", error));
+        </script>
+    </head>
 
-<body class="h-full noise_bg flex flex-col justify-between items-center relative">
-    <nav class="text-center _absolute _top-0 m-10 _mb-10">
-        <a class="font-hand text-3xl md:text-4xl" href="#">Simdi Jinkins</a>
-    </nav>
-    <main class="text-center p-2 space-y-12">
-        <div class="space-y-2 font-serif">
-
-            <h1 class="capitalize text-3xl md:text-4xl tracking-tight align-bottom">
-                To Win <video muted autoplay loop playsinline class="h-[1.5em]  align-text-top hidden sm:inline">
-                    <source src="/public/blender_crown_coin0001-0189.webm" type="video/webm" />
-                </video><img src="/public/crown_0001.png" class="h-[1.5em] inline sm:hidden align-text-top" /> You want
-                a
-                Swiss Army
-                Knife
-            </h1>
-            <p class="text-xl tracking-tight">
-                Technical partner for early stage startups & solo founders
-            </p>
-        </div>
-        <p id="ip">Hi {{ip-address}},</p>
-
-        <p class="max-w-xl m-auto text-base [&>a]:font-semibold">
-            <span style="cursor: url(/public/profile.png), auto;">I’m <b class="relative">Simdi</b></span>, and
-            I can build you a website that communicates your
-            value deeply to potential customers. At the heart of my work is
-            empathy.<br /><br />One thing I really love about design is how small details can subtly shape people's
-            experiences. It's not merely about
-            aesthetics; it's about hitting that sweet spot where everything
-            feels just right.
-            <br /><br />This is why I find joy in crafting playful micro-animations,
-            fine-tuning the perfect spring animation, and humanizing
-            interactions to reflect genuine human intentions. Think about
-            it—it's often the little things that make your day!
-            <br />
-            <br />
-            Some of my projects include
-            <a href="#">fontoweb</a>, <a href="#">arible</a>,
-            <a href="#">distive</a> &
-            <a href="#">nawafx</a>
-            <br />
-            <br />
-            I typically work with a minimum budget of $5000 monthly on
-            bi-weekly basis.
-        </p>
-        <br />
-        <br />
-        <div class="max-w-lg m-auto w-full space-y-4">
-            <button
-                class="bg-blue-500 p-3 transition-all duration-500 active:shadow-sm hover:bg-blue-600 text-base text-white rounded-full w-full shadow-xl">
-                Book a Call
-            </button>
-            <div class="flex justify-between gap-2 items-center [&>hr]:border-blue-500 text-blue-500">
-                <hr class="inline flex-1" />
-                <span class="shrink-0"> Or contact me @</span>
-                <hr class="inline flex-1" />
+    <body
+        class="h-full noise_bg flex flex-col justify-between items-center relative"
+    >
+        <nav class="text-center _absolute _top-0 m-10 _mb-10">
+            <a class="font-hand text-3xl md:text-4xl" href="#">Simdi Jinkins</a>
+        </nav>
+        <main class="text-center p-2 space-y-12">
+            <div class="space-y-2 font-serif">
+                <h1
+                    class="capitalize text-3xl md:text-4xl tracking-tight align-bottom"
+                >
+                    To
+                    <video
+                        muted
+                        autoplay
+                        loop
+                        playsinline
+                        class="h-[1.5em] align-text-top hidden sm:inline"
+                    >
+                        <source
+                            src="/public/blender_crown_coin0001-0189.webm"
+                            type="video/webm"
+                        /></video
+                    ><img
+                        src="/public/crown_0001.png"
+                        class="h-[1.5em] inline sm:hidden align-text-top"
+                    />
+                    Win, You want a Swiss Army Knife
+                </h1>
+                <p class="text-xl tracking-tight">
+                    Technical partner for early stage startups & solo founders
+                </p>
             </div>
-            <ul class="">
-                <li class="md:inline opacity-70 font-semibold hover:opacity-100 duration-150 transition-opacity">
-                    <a href="#">X</a>
-                </li>
-                <li class="md:inline opacity-70 font-semibold hover:opacity-100 duration-150 transition-opacity">
-                    <a href="#">Discord</a>
-                </li>
-                <li
-                    class="md:inline opacity-70 underline font-semibold hover:opacity-100 duration-150 transition-opacity">
-                    <a href="#">me-at-simdijinkins-dot-com</a>
-                </li>
-            </ul>
-        </div>
-        <img class="absolute bottom-0 translate-y-1/2 _-bottom-1/4 right-0 -z-10 hidden lg:block w-2/5 _w-2/5 _max-w-[50%]"
-            src="public/v1_window_3 1.png" />
-    </main>
-</body>
+            <p id="ip">Hi {{ip-address}},</p>
 
+            <p class="max-w-xl m-auto text-base [&>a]:font-semibold">
+                <span style="cursor: url(/public/profile.png), auto"
+                    >I’m <b class="relative">Simdi</b></span
+                >, and I can build you a website that communicates your value
+                deeply to potential customers. At the heart of my work is
+                empathy.<br /><br />One thing I really love about design is how
+                small details can subtly shape people's experiences. It's not
+                merely about aesthetics; it's about hitting that sweet spot
+                where everything feels just right. <br /><br />This is why I
+                find joy in crafting playful micro-animations, fine-tuning the
+                perfect spring animation, and humanizing interactions to reflect
+                genuine human intentions. Think about it—it's often the little
+                things that make your day!
+                <br />
+                <br />
+                Some of my projects include
+                <a href="#">fontoweb</a>, <a href="#">arible</a>,
+                <a href="#">distive</a> &
+                <a href="#">nawafx</a>
+                <br />
+                <br />
+                I typically work with a minimum budget of $5000 monthly on
+                bi-weekly basis.
+            </p>
+            <br />
+            <br />
+            <div class="max-w-lg m-auto w-full space-y-4">
+                <button
+                    class="bg-blue-500 p-3 transition-all duration-500 active:shadow-sm hover:bg-blue-600 text-base text-white rounded-full w-full shadow-xl"
+                >
+                    Book a Call
+                </button>
+                <div
+                    class="flex justify-between gap-2 items-center [&>hr]:border-blue-500 text-blue-500"
+                >
+                    <hr class="inline flex-1" />
+                    <span class="shrink-0"> Or contact me @</span>
+                    <hr class="inline flex-1" />
+                </div>
+                <ul class="">
+                    <li
+                        class="md:inline opacity-70 font-semibold hover:opacity-100 duration-150 transition-opacity"
+                    >
+                        <a href="#">X</a>
+                    </li>
+                    <li
+                        class="md:inline opacity-70 font-semibold hover:opacity-100 duration-150 transition-opacity"
+                    >
+                        <a href="#">Discord</a>
+                    </li>
+                    <li
+                        class="md:inline opacity-70 underline font-semibold hover:opacity-100 duration-150 transition-opacity"
+                    >
+                        <a href="#">me-at-simdijinkins-dot-com</a>
+                    </li>
+                </ul>
+            </div>
+            <img
+                class="absolute bottom-0 translate-y-1/2 _-bottom-1/4 right-0 -z-10 hidden lg:block w-2/5 _w-2/5 _max-w-[50%]"
+                src="public/v1_window_3 1.png"
+            />
+        </main>
+    </body>
 </html>
