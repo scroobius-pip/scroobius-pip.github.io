@@ -17,27 +17,29 @@
         rel="stylesheet" />
 </head>
 
-<body class="h-screen noise_bg flex flex-col justify-center items-center relative">
-    <nav class="text-center _absolute _top-0 pt-5 mb-10">
+<body class="h-full noise_bg flex flex-col justify-between items-center relative">
+    <nav class="text-center _absolute _top-0 m-10 _mb-10">
         <a class="font-hand text-3xl md:text-4xl" href="#">Simdi Jinkins</a>
     </nav>
-    <main class="text-center">
-        <div class="mb-12 space-y-2 font-serif">
-            <!-- <h1 class="text-3xl md:text-4xl tracking-tight">
-                    Concept To Customers
-                </h1> -->
+    <main class="text-center p-2 space-y-12">
+        <div class="space-y-2 font-serif">
+
             <h1 class="capitalize text-3xl md:text-4xl tracking-tight align-bottom">
-                To Win,<video muted autoplay loop playsinline class="h-[1.5em] inline align-text-top">
+                To Win <video muted autoplay loop playsinline class="h-[1.5em]  align-text-top hidden sm:inline">
                     <source src="/public/blender_crown_coin0001-0189.webm" type="video/webm" />
-                </video>You want a Swiss Army Knife
+                </video><img src="/public/crown_0001.png" class="h-[1.5em] inline sm:hidden align-text-top" /> You want
+                a
+                Swiss Army
+                Knife
             </h1>
             <p class="text-xl tracking-tight">
                 Technical partner for early stage startups & solo founders
             </p>
         </div>
-        <p>Hi 180.2.2.30</p>
+        <p>Hi {{ip-address}},</p>
+
         <p class="max-w-xl m-auto text-base [&>a]:font-semibold">
-            I’m Simdi, and I can build you a website that communicates your
+            I’m <b>Simdi</b>, and I can build you a website that communicates your
             value deeply to potential customers. At the heart of my work is
             empathy.
             <br /><br />
@@ -73,18 +75,20 @@
                 <span class="shrink-0"> Or contact me @</span>
                 <hr class="inline flex-1" />
             </div>
-            <ul class="[&>li]:inline space-x-4">
-                <li class="opacity-70 font-semibold hover:opacity-100 duration-150 transition-opacity">
+            <ul class=" space-x-4">
+                <li class="md:inline opacity-70 font-semibold hover:opacity-100 duration-150 transition-opacity">
                     <a href="#">X</a>
                 </li>
-                <li class="opacity-70 font-semibold hover:opacity-100 duration-150 transition-opacity">
+                <li class="md:inline opacity-70 font-semibold hover:opacity-100 duration-150 transition-opacity">
                     <a href="#">Discord</a>
                 </li>
-                <li class="opacity-70 underline font-semibold hover:opacity-100 duration-150 transition-opacity">
+                <li
+                    class="md:inline opacity-70 underline font-semibold hover:opacity-100 duration-150 transition-opacity">
                     <a href="#">me-at-simdijinkins-dot-com</a>
                 </li>
             </ul>
         </div>
+        <img class="absolute bottom-0 right-0 -z-10 hidden lg:block w-1/3" src="public/v1_window_3 1.png" />
     </main>
 </body>
 

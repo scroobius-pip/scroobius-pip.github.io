@@ -4,25 +4,11 @@
 
 .noise_bg {
     /* white to black linear noise gradient spanning from top to bottom */
-    background: linear-gradient(
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0.75)
-        ),
+    background: linear-gradient(rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.75)),
         url("noise_square-min.png"), linear-gradient(#f1f1f1, 70%, #fff);
 }
 
 .noise_bg_2 {
     background: url("noise_square-min.png"), #1d1e21;
-}
-
-.adaptive_text {
-    font-size: clamp(
-        calc(var(--font-size-min) * 1px),
-        calc(
-            (var(--font-size-min) * 1px) +
-                (var(--font-size-max) - var(--font-size-min)) *
-                ((100vw - (var(--font-view-min) * 1px)) / var(--font-view-max))
-        ),
-        calc(var(--font-size-max) * 1px)
-    );
 }
