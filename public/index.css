@@ -574,6 +574,10 @@ video {
   right: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -616,6 +620,10 @@ video {
 
 .h-1 {
   height: 0.25rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-24 {
@@ -676,6 +684,10 @@ video {
 
 .grow {
   flex-grow: 1;
+}
+
+.cursor-\[url\(\/public\/crown_0001\.png\)\] {
+  cursor: url(/public/crown_0001.png);
 }
 
 .grid-flow-row {
