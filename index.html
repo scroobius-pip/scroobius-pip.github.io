@@ -15,6 +15,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&family=Sacramento&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet" />
+    <script>
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('ip').innerHTML = document.getElementById('ip').innerHTML.replace('{{ip-address}}', data.ip);
+            })
+            .catch(error => console.error('Error fetching IP:', error));
+    </script>
 </head>
 
 <body class="h-full noise_bg flex flex-col justify-between items-center relative">
@@ -36,7 +44,7 @@
                 Technical partner for early stage startups & solo founders
             </p>
         </div>
-        <p>Hi {{ip-address}},</p>
+        <p id="ip">Hi {{ip-address}},</p>
 
         <p class="max-w-xl m-auto text-base [&>a]:font-semibold">
             I’m <b>Simdi</b>, and I can build you a website that communicates your
