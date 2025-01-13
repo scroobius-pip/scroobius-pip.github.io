@@ -1076,6 +1076,10 @@ video {
   }
 }
 
+.\[\&\:span\+p\]\:inline:span+p {
+  display: inline;
+}
+
 .\[\&\>a\]\:font-semibold>a {
   font-weight: 600;
 }
