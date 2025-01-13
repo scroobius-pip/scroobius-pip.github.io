@@ -24,6 +24,6 @@ together to make it more awesome.
 **Work**
 
 
-[fontoweb](#), [arible](#), [distive](#), and [nawafx](#). We will work 90% async via Discord, Slack, and Trello
+[fontofweb.com](#), [arible.co](#), and [nawafx.com](#). We will work 90% async via Discord, Slack, and Trello
 
 My rate starts at $8,000/month (billed bi-weekly, cancel anytime).
