@@ -8,7 +8,10 @@ have reached 50,000+ users.
 **What I Offer:**
 - **Product Strategy:** Together, we'll get crystal clear about your vision, identify your target users, and validate
 that we're building something with genuine market demand.
+
+
 - **Tech:** Typescript, Python, Rust, Docker, React.JS, Tailwind, Figma.
+
 
 - **User & Developer Friendly Design:** My development ethos is based on simplicity: for the end-user a minimal and easy
 to understand user experience that also prioritizes speedy development time.
@@ -22,6 +25,6 @@ product and keep that momentum going.
 together to make it more awesome.
 
 **Work**
-Some of my products include: [fontofweb.com](#), [arible.co](#), and [nawafx.com](#). We will work 90% async via Discord, Slack, and Trello
+Some of my products include: [fontofweb.com](#), [arible.co](#), and [nawafx.com](#). 
 
 My rate starts at $8,000/month (billed bi-weekly, cancel anytime).
