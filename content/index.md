@@ -11,6 +11,6 @@
 
     - **Iteration:** We'll keep our ears on the ground, listening and gathering user feedback. Then we'll continue working together to make it more awesome.
 
-    Some of my current & past products include: [fontoweb](#), [arible](#), [distive](#), and [nawafx](#).
+    Some of my products include: [fontoweb](#), [arible](#), [distive](#), and [nawafx](#).
 
     My rate starts at $8,000/month (billed bi-weekly, cancel anytime).
