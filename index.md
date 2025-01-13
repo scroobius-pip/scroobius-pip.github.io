@@ -2,7 +2,7 @@
 layout: index
 title: Home
 ---
-I'm **Simdi**, a full-stack product developer with 9+ years of experience building full-stack products from scratch that
+ a full-stack product developer with 9+ years of experience building full-stack products from scratch that
 have reached 50,000+ users.
 
 **What I Offer**

@@ -574,20 +574,20 @@ video {
   right: 0px;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .-z-10 {
   z-index: -10;
 }
 
-.m-auto {
-  margin: auto;
+.z-10 {
+  z-index: 10;
 }
 
 .m-10 {
   margin: 2.5rem;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mr-4 {
@@ -642,6 +642,10 @@ video {
   height: 100vh;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
 .w-24 {
   width: 6rem;
 }
@@ -650,24 +654,20 @@ video {
   width: 100%;
 }
 
-.w-2\/5 {
-  width: 40%;
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .max-w-screen-2xl {
   max-width: 1536px;
 }
 
-.max-w-xs {
-  max-width: 20rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .flex-1 {
@@ -719,16 +719,16 @@ video {
   justify-content: space-between;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-x-2 {
@@ -761,12 +761,6 @@ video {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -779,6 +773,12 @@ video {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -788,14 +788,14 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-25 {
@@ -849,16 +849,16 @@ video {
   vertical-align: text-top;
 }
 
+.font-hand {
+  font-family: Sacramento;
+}
+
 .font-sans {
   font-family: Space Mono, ui-sans-serif, system-ui;
 }
 
 .font-serif {
   font-family: Noto Serif, ui-serif, Georgia;
-}
-
-.font-hand {
-  font-family: Sacramento;
 }
 
 .text-2xl {
@@ -871,6 +871,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -879,11 +884,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .text-xl {
@@ -937,14 +937,14 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -1055,14 +1055,14 @@ video {
     padding-left: 3rem;
   }
 
-  .md\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }
 
