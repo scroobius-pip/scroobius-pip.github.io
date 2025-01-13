@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="/public/index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&family=Space+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        /> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&family=Sacramento&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <script>
+        fetch("https://api.ipify.org?format=json")
+            .then((response) => response.json())
+            .then((data) => {
+                document.getElementById("ip").innerHTML = document
+                    .getElementById("ip")
+                    .innerHTML.replace("{{ip-address}}", data.ip);
+            })
+            .catch((error) => console.error("Error fetching IP:", error));
+    </script>
+</head>
+
+<body class="h-full noise_bg flex flex-col justify-between items-center relative">
+    <nav class="text-center _absolute _top-0 m-10 _mb-10">
+        <a class="font-hand text-3xl md:text-4xl" href="#">Simdi Jinkins</a>
+    </nav>
+    <main class="text-center p-2 space-y-6">
+        <div class="space-y-2 font-serif">
+            <h1 class="capitalize text-3xl md:text-4xl tracking-tight align-bottom">
+                To
+                <video muted autoplay loop playsinline class="h-[1.5em] align-text-top hidden sm:inline">
+                    <source src="/public/blender_crown_coin0001-0189.webm" type="video/webm" />
+                </video><img src="/public/crown_0001.png" class="h-[1.5em] inline sm:hidden align-text-top" />
+                Win, You want a Swiss Army Knife
+            </h1>
+            <p class="text-xl tracking-tight">
+                Technical partner for early stage startups & solo founders
+            </p>
+        </div>
+        <p id="ip" class="italic _text-lg">Hi {{ip-address}},</p>
+        <p class="max-w-xl m-auto text-base [&>a]:font-semibold">
+            <!-- <span style="cursor: url(/public/profile.png), auto">I’m <b class="relative">Simdi</b></span>, a full-stack
+            product developer with 9+ years of experience building
+            full-stack products from
+            scratch that
+            have reached 50,000+ users.<br><br>
+            <strong>What I Offer:</strong><br>
+            - <strong>Product Strategy:</strong> Together, we'll get crystal clear about your vision, identify your
+            target users,
+            and validate that we're building something with genuine market demand.<br>
+            - <strong>Tech:</strong> Typescript, Python, Rust, Docker, React.JS, Tailwind, Figma.<br>
+            - <strong>User & Developer Friendly Design:</strong> My development ethos is based on simplicity: for the
+            end-user
+            a minimal
+            and easy to understand user experience that also prioritizes speedy development time.
+            <br>
+            - <strong>Launch & Growth:</strong> Launch day is just the beginning. We'll work together to get those first
+            users
+            buzzing about your product and keep that momentum going.<br>
+            - <strong>Iteration:</strong> We'll keep our ears on the ground, listening and gathering user feedback. Then
+            we'll continue working together to make it more awesome.
+            <br><br>
+            <strong>Work</strong> <br>
+            <a href="#">fontoweb</a>, <a href="#">arible</a>, <a href="#">distive</a>, and <a href="#">nawafx</a>. We
+            will
+            work 90% async via Discord, Slack, and Trello<br><br>
+            My rate starts at $8,000/month (billed bi-weekly, cancel anytime). -->
+            {{ content }}
+        </p>
+
+        <div class="max-w-lg m-auto w-full space-y-4">
+            <button
+                class="bg-blue-500 p-3 transition-all duration-500 active:shadow-sm hover:bg-blue-600 text-base text-white rounded-full w-full shadow-lg shadow-blue-300">
+                Book a Call
+            </button>
+            <div class="flex justify-between gap-2 items-center [&>hr]:border-blue-500 text-blue-500">
+                <hr class="inline flex-1" />
+                <span class="shrink-0"> Or contact me @</span>
+                <hr class="inline flex-1" />
+            </div>
+            <ul class="">
+                <li class="md:inline opacity-70 font-semibold hover:opacity-100 duration-150 transition-opacity">
+                    <a href="https://x.com/nintharc">X</a>
+                </li>
+                <li class="md:inline opacity-70 font-semibold hover:opacity-100 duration-150 transition-opacity">
+                    <a href="#">Discord</a>
+                </li>
+                <li
+                    class="md:inline opacity-70 underline font-semibold hover:opacity-100 duration-150 transition-opacity">
+                    <a href="email:me@simdijinkins.com">me-at-simdijinkins-dot-com</a>
+                </li>
+            </ul>
+        </div>
+        <img class="absolute bottom-0 _fixed translate-y-1/2 right-0 -z-10 hidden lg:block w-2/5 _w-2/5 _max-w-[50%]"
+            src="public/v1_window_3 1.png" />
+    </main>
+</body>
+
+</html>
