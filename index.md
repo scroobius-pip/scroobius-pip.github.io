@@ -22,8 +22,6 @@ product and keep that momentum going.
 together to make it more awesome.
 
 **Work**
-
-
-[fontofweb.com](#), [arible.co](#), and [nawafx.com](#). We will work 90% async via Discord, Slack, and Trello
+Some of my products include: [fontofweb.com](#), [arible.co](#), and [nawafx.com](#). We will work 90% async via Discord, Slack, and Trello
 
 My rate starts at $8,000/month (billed bi-weekly, cancel anytime).
